@@ -1,0 +1,10 @@
+﻿{
+  "name": "WebDav extension for SourceKit",
+  "version": "0.1.0",
+  "incognito": "split",
+  "background_page": "background.html",
+  "permissions": [
+    "tabs",
+    "http://localhost/"
+  ]
+}
