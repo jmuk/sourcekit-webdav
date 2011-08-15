@@ -164,4 +164,11 @@ function registerToSourcekit() {
   });
 };
 
-window.addEventListener('load', registerToSourcekit);
+function registerRepeatedly() {
+  // Call the registration method repeatedly.
+  registerToSourcekit();
+  var waitTime = 10; /* sec */
+  window.setTimeout(registerRepeatedly, waitTime * 1000);
+}
+
+window.addEventListener('load', registerRepeatedly);
